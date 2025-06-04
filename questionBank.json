@@ -1,0 +1,781 @@
+
+{
+  "subjects": [
+    {
+      "name": "AP Calculus",
+      "id": "ap_calculus",
+      "units": [
+        {
+          "name": "Unit 1 - Limits and Continuity",
+          "id": "ap_calc_u1",
+          "sections": [
+            { "id": "ap_calc_u1_s1_1", "name": "1.1 Can Change Occur at an Instant?", "questions": [] },
+            { "id": "ap_calc_u1_s1_2", "name": "1.2 Defining Limits and Using Limit Notation", "questions": [] },
+            { "id": "ap_calc_u1_s1_3", "name": "1.3 Estimating Limit Values from Graphs", "questions": [] },
+            { "id": "ap_calc_u1_s1_4", "name": "1.4 Estimating Limit Values from Tables", "questions": [] },
+            { "id": "ap_calc_u1_s1_5", "name": "1.5 Determining Limits Using Algebraic Properties", "questions": [] },
+            { "id": "ap_calc_u1_s1_6", "name": "1.6 Determining Limits Using Algebraic Manipulation", "questions": [] },
+            { "id": "ap_calc_u1_s1_7", "name": "1.7 Selecting Procedures for Determining Limits", "questions": [] },
+            { "id": "ap_calc_u1_s1_8", "name": "1.8 Determining Limits Using the Squeeze Theorem", "questions": [] },
+            { "id": "ap_calc_u1_s1_9", "name": "1.9 Connecting Multiple Representations of Limits", "questions": [] },
+            { "id": "ap_calc_u1_s1_10", "name": "1.10 Exploring Types of Discontinuities", "questions": [] },
+            { "id": "ap_calc_u1_s1_11", "name": "1.11 Defining Continuity at a Point", "questions": [] },
+            { "id": "ap_calc_u1_s1_12", "name": "1.12 Confirming Continuity Over an Interval", "questions": [] },
+            { "id": "ap_calc_u1_s1_13", "name": "1.13 Removing Discontinuities", "questions": [] },
+            { "id": "ap_calc_u1_s1_14", "name": "1.14 Infinite Limits and Vertical Asymptotes", "questions": [] },
+            { "id": "ap_calc_u1_s1_15", "name": "1.15 Limits at Infinity and Horizontal Asymptotes", "questions": [] },
+            { "id": "ap_calc_u1_s1_16", "name": "1.16 Intermediate Value Theorem (IVT)", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 2 - Differentiation: Definition and Fundamental Properties",
+          "id": "ap_calc_u2",
+          "sections": [
+            { "id": "ap_calc_u2_s2_1", "name": "2.1 Defining Average and Instantaneous Rate of Change at a Point", "questions": [] },
+            { "id": "ap_calc_u2_s2_2", "name": "2.2 Defining the Derivative of a Function and Using Derivative Notation", "questions": [] },
+            { "id": "ap_calc_u2_s2_3", "name": "2.3 Estimating Derivatives of a Function at a Point", "questions": [] },
+            { "id": "ap_calc_u2_s2_4", "name": "2.4 Connecting Differentiability and Continuity", "questions": [] },
+            { "id": "ap_calc_u2_s2_5", "name": "2.5 Applying the Power Rule", "questions": [] },
+            { "id": "ap_calc_u2_s2_6", "name": "2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple", "questions": [] },
+            { "id": "ap_calc_u2_s2_7", "name": "2.7 Derivatives of cos(x), sin(x), e^x, and ln(x)", "questions": [] },
+            { "id": "ap_calc_u2_s2_8", "name": "2.8 The Product Rule", "questions": [] },
+            { "id": "ap_calc_u2_s2_9", "name": "2.9 The Quotient Rule", "questions": [{
+              "id": "mc_u2s9_q2",
+              "questionText": "The table above gives values of the twice-differentiable functions $$f$$ and $$g$$ and their derivatives at $$x=2$$.\n\nLet $$h(x) = \\frac{f'(x)}{g(x)}$$. What is the value of $$h'(2)$$?",
+              "answerText": "We use the quotient rule: \n\n$$h(x) = \\frac{f'(x)}{g(x)}$$ so \n\n$$h'(x) = \\frac{f''(x)g(x) - f'(x)g'(x)}{[g(x)]^2}$$.\n\nSubstitute the given values:\n\n$$h'(2) = \\frac{3(-2) - (-3)(5)}{(-2)^2} = \\frac{-6 + 15}{4} = \\frac{9}{4}.$$",
+              "subjectId": "ap_calculus",
+              "unitId": "unit_2_differentiation",
+              "sectionId": "u2s9",
+              "questionType": "multiple-choice",
+              "choices": [
+                {
+                  "id": "choice_a",
+                  "text": "$$\\frac{9}{4}$$"
+                },
+                {
+                  "id": "choice_b",
+                  "text": "$$\\frac{3}{5}$$"
+                },
+                {
+                  "id": "choice_c",
+                  "text": "$$-\\frac{3}{2}$$"
+                },
+                {
+                  "id": "choice_d",
+                  "text": "$$-\\frac{21}{4}$$"
+                }
+              ],
+              "correctChoiceId": "choice_a",
+              "imageDataUri": "data:image/png;base64,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9bybeRzJsYuxotgH7etd/iXI/i4Kb8xZgBVf7rv6jkwlxxC7+HP8ceE/MeZW9ytGyYMoVbBHcr+XVigZm2dJkKHiIHzbH8ZxsXLGzc5ysjyvCpUfuz2e1ORkJsmIGVv2GoDuMnLOJ7InPU9pLZVL2cmyedEkmbBkh2RYO+HMSdwyz19PajBIp5FvSMyedMlXMjFfOiPJm9+VCROWyc6MQvWH3Uvd7p9mMWVslGlB7dQ+WsWHcbzEnqmPJ90VSOLCIWoO3tJnbIRsSzsnJvMlyU7eLMsnjZfpnx7U5QQwe7lfppWZpShxkfQry3eURKW55zivTK88ucveJQSFye9j5J1jsa7aa4P3wqS49XhrYAv1a/dQOc86tcuJu+ydTgoO4asPVuGjtTGI2noE8A3EQ3++A7ffPgBB9wXiNu/rXLoy6pZ5WlZIv1qNFR/F4JOoLUgtO6Z5oJLRnRgQNAj33PZHWN2L7AbqdP8s3I+IkcMQuu6Y2mCb96Q4HHprIJy9Buh+eQpKsvfhi+iP8NWGjfjfl3tRoIzhkfcH4u6+Qbjn3r64+feN1J91T+7ZRy8i86cDOHgoAesWv4WFW08obQZ0GhmGqSF3o8tNHeHf1dullxyzl155siAlu1TOk9lqi3lqi3lqi3lqi3lqj5lqS688eQwpEREREemKBSkRERER6YoFKRERERHpigUpEREREemKBSkRERER6YoFKRERERHpigUpEREREemKBSkRERER6YoFKRERERHpigUpEREREemKBSkRERER6YoFKRERERHpigUpEREREemKBSkRERER6YoFKRERERHpigUpEREREemKBSkRERER6YoFKRERERHpigUpEREREenKSxTqY4/i5eWlPiIiIiIie+lRGnpsQUpEREREdQN32RMRERGRrliQEhEREZGuWJASERERka5YkBIRERGRrliQEhEREZGuWJASERERka5YkBIRERGRrliQEhEREZGuWJASERERka5YkBIRERGRrliQEhEREZGuWJASERERka5YkBIRERGRrliQEhEREZGuWJASERERka5YkBIRERGRrliQEhEREZGuWJASERERka5YkBIRERGRjoD/B4v/hojvUgIxAAAAAElFTkSuQmCC"
+            }] },
+            { "id": "ap_calc_u2_s2_10", "name": "2.10 Derivatives of tan(x), cot(x), sec(x), and csc(x)", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 3 - Differentiation: Composite, Implicit, and Inverse Functions",
+          "id": "ap_calc_u3",
+          "sections": [
+            {
+              "id": "ap_calc_u3_s3_1",
+              "name": "3.1 The Chain Rule",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_1_mc_1",
+                  "questionText": "If $$h(x) = (2x^2 - 5)^3$$, what is $$h'(x)$$?",
+                  "answerText": "$$h'(x) = 6(2x^2 - 5)^2 \\cdot 4x = 12x(2x^2 - 5)^2$$. Apply the Chain Rule: derivative of the outer function evaluated at the inner function, times the derivative of the inner function.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_1",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_1_mc_1_a", "text": "$$3(2x^2 - 5)^2$$" },
+                    { "id": "u3_s3_1_mc_1_b", "text": "$$12x(2x^2 - 5)^2$$" },
+                    { "id": "u3_s3_1_mc_1_c", "text": "$$4x(2x^2 - 5)^3$$" },
+                    { "id": "u3_s3_1_mc_1_d", "text": "$$6(2x^2 - 5)^2$$" }
+                  ],
+                  "correctChoiceId": "u3_s3_1_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u3_s3_1_oe_1",
+                  "questionText": "Given $$h(x) = f(g(x))$$, where $$f(x) = x^3$$ and $$g(x) = 2x+1$$. Find $$h'(x)$$.",
+                  "answerText": "1️⃣ Using the Chain Rule, $$h'(x) = f'(g(x)) \\cdot g'(x)$$.\\n\\n2️⃣ First, find the derivatives of $$f(x)$$ and $$g(x)$$: $$\\quad f'(x) = 3x^2$$ $$\\quad g'(x) = 2$$.\\n\\n3️⃣ Substitute $$g(x)$$ into $$f'(x)$$: $$\\quad f'(g(x)) = 3(g(x))^2 = 3(2x+1)^2$$.\\n\\n4️⃣ Multiply by $$g'(x)$$: $$\\quad h'(x) = 3(2x+1)^2 \\cdot 2 = 6(2x+1)^2$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_1",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u3_s3_2",
+              "name": "3.2 Implicit Differentiation",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_2_mc_1",
+                  "questionText": "If $$x^2 + y^2 = 25$$, find $$\\frac{dy}{dx}$$.",
+                  "answerText": "Differentiating with respect to x: $$2x + 2y \\frac{dy}{dx} = 0$$. Solving for $$\\frac{dy}{dx}$$ gives $$\\frac{dy}{dx} = -\\frac{x}{y}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_2",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_2_mc_1_a", "text": "$$\\frac{x}{y}$$" },
+                    { "id": "u3_s3_2_mc_1_b", "text": "$$-\\frac{x}{y}$$" },
+                    { "id": "u3_s3_2_mc_1_c", "text": "$$\\frac{y}{x}$$" },
+                    { "id": "u3_s3_2_mc_1_d", "text": "$$-2x - 2y$$" }
+                  ],
+                  "correctChoiceId": "u3_s3_2_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u3_s3_2_oe_1",
+                  "questionText": "Find the slope of the tangent line to the curve $$y^3 + xy = 2$$ at the point $$(1, 1)$$.",
+                  "answerText": "1️⃣ Differentiate implicitly with respect to $$x$$: $$3y^2 \\frac{dy}{dx} + (1 \\cdot y + x \\cdot \\frac{dy}{dx}) = 0$$.\\n\\n2️⃣ Group terms with $$\\frac{dy}{dx}$$: $$\\frac{dy}{dx}(3y^2 + x) = -y$$.\\n\\n3️⃣ Solve for $$\\frac{dy}{dx}$$: $$\\frac{dy}{dx} = -\\frac{y}{3y^2 + x}$$.\\n\\n4️⃣ Substitute the point $$(1, 1)$$: $$\\frac{dy}{dx} = -\\frac{1}{3(1)^2 + 1} = -\\frac{1}{4}$$. The slope is $$-1/4$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_2",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u3_s3_3",
+              "name": "3.3 Differentiating Inverse Functions",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_3_mc_1",
+                  "questionText": "Let $$f(x) = x^3 + x$$. If $$g(x)$$ is the inverse of $$f(x)$$, what is the value of $$g'(2)$$?",
+                  "answerText": "First, find $$a$$ such that $$f(a)=2$$. $$a^3+a=2 \\implies a=1$$. Then $$f'(x) = 3x^2+1$$, so $$f'(1)=4$$. Thus, $$g'(2) = \\frac{1}{f'(g(2))} = \\frac{1}{f'(1)} = \\frac{1}{4}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_3",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_3_mc_1_a", "text": "$$1/2$$" },
+                    { "id": "u3_s3_3_mc_1_b", "text": "$$4$$" },
+                    { "id": "u3_s3_3_mc_1_c", "text": "$$1/4$$" },
+                    { "id": "u3_s3_3_mc_1_d", "text": "$$2$$" }
+                  ],
+                  "correctChoiceId": "u3_s3_3_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u3_s3_3_oe_1",
+                  "questionText": "Given $$f(x) = e^x + 2x$$. Let $$g(x) = f^{-1}(x)$$. Find $$g'(1)$$.",
+                  "answerText": "1️⃣ We need to find $$a$$ such that $$f(a)=1$$. By inspection, if $$a=0$$, then $$f(0) = e^0 + 2(0) = 1+0=1$$. So $$g(1)=0$$.\\n\\n2️⃣ Find the derivative of $$f(x)$$: $$f'(x) = e^x + 2$$.\\n\\n3️⃣ Evaluate $$f'(a)$$ where $$a=g(1)=0$$: $$f'(0) = e^0 + 2 = 1+2=3$$.\\n\\n4️⃣ Use the formula $$g'(y_0) = \\frac{1}{f'(g(y_0))}$$: $$g'(1) = \\frac{1}{f'(0)} = \\frac{1}{3}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_3",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u3_s3_4",
+              "name": "3.4 Differentiating Inverse Trigonometric Functions",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_4_mc_1",
+                  "questionText": "What is the derivative of $$y = \\arctan(3x)$$?",
+                  "answerText": "Using the chain rule and derivative of arctan(u): $$\\frac{dy}{dx} = \\frac{1}{1+(3x)^2} \\cdot 3 = \\frac{3}{1+9x^2}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_4",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_4_mc_1_a", "text": "$$\\frac{1}{1+9x^2}$$" },
+                    { "id": "u3_s3_4_mc_1_b", "text": "$$\\frac{3}{1+3x^2}$$" },
+                    { "id": "u3_s3_4_mc_1_c", "text": "$$\\frac{3}{1+9x^2}$$" },
+                    { "id": "u3_s3_4_mc_1_d", "text": "$$\\sec^2(3x) \\cdot 3$$" }
+                  ],
+                  "correctChoiceId": "u3_s3_4_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u3_s3_4_oe_1",
+                  "questionText": "Find $$\\frac{d}{dx}(\\arcsin(x^2))$$.",
+                  "answerText": "1️⃣ Let $$u = x^2$$. Then $$y = \\arcsin(u)$$.\\n\\n2️⃣ The derivative of $$\\arcsin(u)$$ with respect to $$u$$ is $$\\frac{1}{\\sqrt{1-u^2}}$$.\\n\\n3️⃣ The derivative of $$u=x^2$$ with respect to $$x$$ is $$2x$$.\\n\\n4️⃣ By the Chain Rule, $$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = \\frac{1}{\\sqrt{1-(x^2)^2}} \\cdot (2x) = \\frac{2x}{\\sqrt{1-x^4}}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_4",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u3_s3_5",
+              "name": "3.5 Selecting Procedures for Calculating Derivatives",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_5_mc_1",
+                  "questionText": "To differentiate $$y = x^2 \\sin(x)$$, which rule should be applied first?",
+                  "answerText": "The function is a product of two functions, $$x^2$$ and $$\\sin(x)$$, so the Product Rule is applied first.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_5",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_5_mc_1_a", "text": "Chain Rule" },
+                    { "id": "u3_s3_5_mc_1_b", "text": "Quotient Rule" },
+                    { "id": "u3_s3_5_mc_1_c", "text": "Product Rule" },
+                    { "id": "u3_s3_5_mc_1_d", "text": "Power Rule" }
+                  ],
+                  "correctChoiceId": "u3_s3_5_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u3_s3_5_oe_1",
+                  "questionText": "Describe the steps and rules needed to find the derivative of $$f(x) = \\frac{e^{2x}}{\\cos(x)}$$. Do not calculate the derivative.",
+                  "answerText": "1️⃣ Identify the overall structure: The function is a quotient of $$e^{2x}$$ and $$\\cos(x)$$. Therefore, the Quotient Rule must be applied first: $$(\\frac{u}{v})' = \\frac{u'v - uv'}{v^2}$$.\\n\\n2️⃣ Differentiate the numerator $$u = e^{2x}$$: This requires the Chain Rule (outer function $$e^w$$, inner function $$w=2x$$).\\n\\n3️⃣ Differentiate the denominator $$v = \\cos(x)$$: This is a basic derivative rule.\\n\\n4️⃣ Substitute these derivatives into the Quotient Rule formula.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_5",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u3_s3_6",
+              "name": "3.6 Calculating Higher-Order Derivatives",
+              "questions": [
+                {
+                  "id": "ap_calc_u3_s3_6_mc_1",
+                  "questionText": "If $$f(x) = x^4 - 3x^2 + 5$$, what is $$f''(x)$$ (the second derivative)?",
+                  "answerText": "$$f'(x) = 4x^3 - 6x$$. Then $$f''(x) = 12x^2 - 6$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_6",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u3_s3_6_mc_1_a", "text": "$$4x^3 - 6x$$" },
+                    { "id": "u3_s3_6_mc_1_b", "text": "$$12x^2 - 6x$$" },
+                    { "id": "u3_s3_6_mc_1_c", "text": "$$12x^2 - 6$$" },
+                    { "id": "u3_s3_6_mc_1_d", "text": "$$24x$$" }
+                  ],
+                  "correctChoiceId": "u3_s3_6_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u3_s3_6_oe_1",
+                  "questionText": "Find the third derivative, $$y'''$$, of $$y = \\sin(2x)$$.",
+                  "answerText": "1️⃣ First derivative: $$y' = \\cos(2x) \\cdot 2 = 2\\cos(2x)$$.\\n\\n2️⃣ Second derivative: $$y'' = 2(-\\sin(2x) \\cdot 2) = -4\\sin(2x)$$.\\n\\n3️⃣ Third derivative: $$y''' = -4(\\cos(2x) \\cdot 2) = -8\\cos(2x)$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u3",
+                  "sectionId": "ap_calc_u3_s3_6",
+                  "questionType": "open"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Unit 4 - Contextual Applications of Differentiation",
+          "id": "ap_calc_u4",
+          "sections": [
+            { "id": "ap_calc_u4_s4_1", "name": "4.1 Interpreting the Meaning of the Derivative in Context", "questions": [] },
+            { "id": "ap_calc_u4_s4_2", "name": "4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration", "questions": [] },
+            { "id": "ap_calc_u4_s4_3", "name": "4.3 Rates of Change in Applied Contexts Other Than Motion", "questions": [] },
+            { "id": "ap_calc_u4_s4_4", "name": "4.4 Introduction to Related Rates", "questions": [] },
+            { "id": "ap_calc_u4_s4_5", "name": "4.5 Solving Related Rates Problems", "questions": [] },
+            { "id": "ap_calc_u4_s4_6", "name": "4.6 Approximating Values of a Function Using Local Linearity and Linearization", "questions": [] },
+            { "id": "ap_calc_u4_s4_7", "name": "4.7 Using L'Hopital's Rule for Determining Limits of Indeterminate Forms", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 5 - Analytical Applications of Differentiation",
+          "id": "ap_calc_u5",
+          "sections": [
+            { "id": "ap_calc_u5_s5_1", "name": "5.1 Using the Mean Value Theorem", "questions": [] },
+            { "id": "ap_calc_u5_s5_2", "name": "5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points", "questions": [] },
+            { "id": "ap_calc_u5_s5_3", "name": "5.3 Determining Intervals on Which a Function is Increasing or Decreasing", "questions": [] },
+            { "id": "ap_calc_u5_s5_4", "name": "5.4 Using the First Derivative Test to Determine Relative Local Extrema", "questions": [] },
+            { "id": "ap_calc_u5_s5_5", "name": "5.5 Using the Candidates Test to Determine Absolute Global) Extrema", "questions": [] },
+            { "id": "ap_calc_u5_s5_6", "name": "5.6 Determining Concavity of Functions over Their Domains", "questions": [] },
+            { "id": "ap_calc_u5_s5_7", "name": "5.7 Using the Second Derivative Test to Determine Extrema", "questions": [] },
+            { "id": "ap_calc_u5_s5_8", "name": "5.8 Sketching Graphs of Functions and Their Derivatives", "questions": [] },
+            { "id": "ap_calc_u5_s5_9", "name": "5.9 Connecting a Function, Its First Derivative, and Its Second Derivative", "questions": [] },
+            { "id": "ap_calc_u5_s5_10", "name": "5.10 Introduction to Optimization Problems", "questions": [] },
+            { "id": "ap_calc_u5_s5_11", "name": "5.11 Solving Optimization Problems", "questions": [] },
+            { "id": "ap_calc_u5_s5_12", "name": "5.12 Exploring Behaviors of Implicit Relations", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 6 - Integration and Accumulation of Change",
+          "id": "ap_calc_u6",
+          "sections": [
+            { "id": "ap_calc_u6_s6_1", "name": "6.1 Exploring Accumulation of Change", "questions": [] },
+            { "id": "ap_calc_u6_s6_2", "name": "6.2 Approximating Areas with Riemann Sums", "questions": [] },
+            { "id": "ap_calc_u6_s6_3", "name": "6.3 Riemann Sums, Summation Notation, and Definite Integral Notation", "questions": [] },
+            { "id": "ap_calc_u6_s6_4", "name": "The Fundamental Theorem of Calculus and Accumulation Functions", "questions": [] },
+            { "id": "ap_calc_u6_s6_5", "name": "6.5 Interpreting the Behavior of Accumulation Functions Involving Area", "questions": [] },
+            { "id": "ap_calc_u6_s6_6", "name": "6.6 Applying Properties of Definite Integrals", "questions": [] },
+            { "id": "ap_calc_u6_s6_7", "name": "6.7 The Fundamental Theorem of Calculus and Definite Integrals", "questions": [] },
+            { "id": "ap_calc_u6_s6_8", "name": "6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation", "questions": [] },
+            { "id": "ap_calc_u6_s6_9", "name": "6.9 Integrating Using Substitution", "questions": [] },
+            { "id": "ap_calc_u6_s6_10", "name": "6.10 Integrating Functions Using Long Division and Completing the Square", "questions": [] },
+            { "id": "ap_calc_u6_s6_11", "name": "6.11 Integrating Using Integration by Parts (BC topic)", "questions": [] },
+            { "id": "ap_calc_u6_s6_12", "name": "6.12 Integrating Using Linear Partial Fractions (BC topic)", "questions": [] },
+            { "id": "ap_calc_u6_s6_13", "name": "6.13 Evaluating Improper Integrals (BC topic)", "questions": [] },
+            { "id": "ap_calc_u6_s6_14", "name": "6.14 Selecting Techniques for Antidifferentiation", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 7 - Differential Equations",
+          "id": "ap_calc_u7",
+          "sections": [
+            { "id": "ap_calc_u7_s7_1", "name": "7.1 Modeling Situations with Differential Equations", "questions": [] },
+            { "id": "ap_calc_u7_s7_2", "name": "7.2 Verifying Solutions for Differential Equations", "questions": [] },
+            { "id": "ap_calc_u7_s7_3", "name": "7.3 Sketching Slope Fields", "questions": [] },
+            { "id": "ap_calc_u7_s7_4", "name": "7.4 Reasoning Using Slope Fields", "questions": [] },
+            { "id": "ap_calc_u7_s7_5", "name": "7.5 Euler's Method (BC topic)", "questions": [] },
+            { "id": "ap_calc_u7_s7_6", "name": "7.6 General Solutions Using Separation of Variables", "questions": [] },
+            { "id": "ap_calc_u7_s7_7", "name": "7.7 Particular Solutions using Initial Conditions and Separation of Variables", "questions": [] },
+            { "id": "ap_calc_u7_s7_8", "name": "7.8 Exponential Models with Differential Equations", "questions": [] },
+            { "id": "ap_calc_u7_s7_9", "name": "7.9 Logistic Models with Differential Equations (BC topic)", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 8 - Applications of Integration",
+          "id": "ap_calc_u8",
+          "sections": [
+            {
+              "id": "ap_calc_u8_s8_1",
+              "name": "8.1 Average Value of a Function on an Interval",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_1_mc_1",
+                  "questionText": "The function $$f(x) = x^2$$ is defined on the interval $$[0, 3]$$. What is the average value of $$f(x)$$ on this interval?",
+                  "answerText": "The average value is 3.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_1",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_1_mc_1_a", "text": "9" },
+                    { "id": "u8_s8_1_mc_1_b", "text": "3" },
+                    { "id": "u8_s8_1_mc_1_c", "text": "4.5" },
+                    { "id": "u8_s8_1_mc_1_d", "text": "6" }
+                  ],
+                  "correctChoiceId": "u8_s8_1_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_1_oe_1",
+                  "questionText": "Find the average value of the function $$g(x) = \\sin(x)$$ on the interval $$[0, \\pi]$$.",
+                  "answerText": "1️⃣ The formula for the average value of a function $$g(x)$$ on $$[a, b]$$ is $$\\frac{1}{b-a} \\int_{a}^{b} g(x) dx$$.\\n\\n2️⃣ For $$g(x) = \\sin(x)$$ on $$[0, \\pi]$$, this is $$\\frac{1}{\\pi-0} \\int_{0}^{\\pi} \\sin(x) dx = \\frac{1}{\\pi} [-\\cos(x)]_{0}^{\\pi}$$.\\n\\n3️⃣ Evaluate: $$\\frac{1}{\\pi} (-\\cos(\\pi) - (-\\cos(0))) = \\frac{1}{\\pi} (-(-1) - (-1)) = \\frac{1}{\\pi} (1 + 1) = \\frac{2}{\\pi}$$.\\n\\nTherefore, the average value is $$\\frac{2}{\\pi}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_1",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_2",
+              "name": "8.2 Position, Velocity, and Acceleration Using Integrals",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_2_mc_1",
+                  "questionText": "A particle's velocity is given by $$v(t) = 3t^2 - 2t$$. If its initial position $$s(0) = 5$$, what is its position at $$t=2$$?",
+                  "answerText": "$$s(t) = \\int (3t^2 - 2t) dt = t^3 - t^2 + C$$. Since $$s(0)=5$$, $$0^3 - 0^2 + C = 5 \\implies C=5$$. So $$s(t) = t^3 - t^2 + 5$$. Then $$s(2) = 2^3 - 2^2 + 5 = 8 - 4 + 5 = 9$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_2",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_2_mc_1_a", "text": "4" },
+                    { "id": "u8_s8_2_mc_1_b", "text": "8" },
+                    { "id": "u8_s8_2_mc_1_c", "text": "9" },
+                    { "id": "u8_s8_2_mc_1_d", "text": "13" }
+                  ],
+                  "correctChoiceId": "u8_s8_2_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_2_oe_1",
+                  "questionText": "The acceleration of a particle moving along the x-axis is given by $$a(t) = 6t - 2$$. If the velocity at $$t=1$$ is $$v(1)=4$$ and the position at $$t=0$$ is $$s(0)=10$$, find the position $$s(t)$$.",
+                  "answerText": "1️⃣ Find velocity $$v(t)$$: $$v(t) = \\int a(t) dt = \\int (6t - 2) dt = 3t^2 - 2t + C_1$$.\\n\\n2️⃣ Use $$v(1)=4$$ to find $$C_1$$: $$3(1)^2 - 2(1) + C_1 = 4 \\implies 3 - 2 + C_1 = 4 \\implies 1 + C_1 = 4 \\implies C_1 = 3$$. So $$v(t) = 3t^2 - 2t + 3$$.\\n\\n3️⃣ Find position $$s(t)$$: $$s(t) = \\int v(t) dt = \\int (3t^2 - 2t + 3) dt = t^3 - t^2 + 3t + C_2$$.\\n\\n4️⃣ Use $$s(0)=10$$ to find $$C_2$$: $$(0)^3 - (0)^2 + 3(0) + C_2 = 10 \\implies C_2 = 10$$.\\n\\nTherefore, the position function is $$s(t) = t^3 - t^2 + 3t + 10$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_2",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_3",
+              "name": "8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_3_mc_1",
+                  "questionText": "Water is pumped into a tank at a rate of $$R(t) = 200 - 4t$$ liters per hour for $$0 \\le t \\le 10$$. How much water is pumped into the tank during the first 5 hours?",
+                  "answerText": "The total amount of water pumped is $$\\int_{0}^{5} (200 - 4t) dt = [200t - 2t^2]_{0}^{5} = (200(5) - 2(5)^2) - 0 = 1000 - 50 = 950$$ liters.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_3",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_3_mc_1_a", "text": "800 liters" },
+                    { "id": "u8_s8_3_mc_1_b", "text": "900 liters" },
+                    { "id": "u8_s8_3_mc_1_c", "text": "950 liters" },
+                    { "id": "u8_s8_3_mc_1_d", "text": "1000 liters" }
+                  ],
+                  "correctChoiceId": "u8_s8_3_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_3_oe_1",
+                  "questionText": "The temperature of a metal rod, $$T(x)$$, in degrees Celsius, at a position $$x$$ meters from one end is changing at a rate of $$T'(x) = 15 - 3x$$ for $$0 \\le x \\le 4$$. If the temperature at $$x=0$$ is $$T(0) = 20^{\\circ}C$$, what is the temperature at $$x=4$$ meters?",
+                  "answerText": "1️⃣ The change in temperature from $$x=0$$ to $$x=4$$ is $$\\int_{0}^{4} T'(x) dx = \\int_{0}^{4} (15 - 3x) dx$$.\\n\\n2️⃣ Evaluate the integral: $$[15x - \\frac{3}{2}x^2]_{0}^{4} = (15(4) - \\frac{3}{2}(4)^2) - (0) = (60 - \\frac{3}{2}(16)) = 60 - 24 = 36^{\\circ}C$$.\\n\\n3️⃣ The temperature at $$x=4$$ is the initial temperature plus the change: $$T(4) = T(0) + 36 = 20 + 36 = 56^{\\circ}C$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_3",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_4",
+              "name": "8.4 Area Between Curves (with respect to x)",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_4_mc_1",
+                  "questionText": "Find the area of the region bounded by $$y = x^2$$ and $$y = x$$.",
+                  "answerText": "Intersection points: $$x^2 = x \\implies x^2 - x = 0 \\implies x(x-1) = 0$$, so $$x=0, x=1$$. For $$x \\in [0,1]$$, $$x \\ge x^2$$. Area $$= \\int_{0}^{1} (x - x^2) dx = [\\frac{x^2}{2} - \\frac{x^3}{3}]_{0}^{1} = (\\frac{1}{2} - \\frac{1}{3}) - 0 = \\frac{1}{6}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_4",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_4_mc_1_a", "text": "$$1/3$$" },
+                    { "id": "u8_s8_4_mc_1_b", "text": "$$1/6$$" },
+                    { "id": "u8_s8_4_mc_1_c", "text": "$$1/2$$" },
+                    { "id": "u8_s8_4_mc_1_d", "text": "$$2/3$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_4_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_4_oe_1",
+                  "questionText": "Set up the integral(s) to find the area of the region enclosed by the graphs of $$y = \\sqrt{x}$$, $$y = 0$$, and $$x = 4$$. Do not evaluate.",
+                  "answerText": "1️⃣ Sketch the region. The curve $$y=\\sqrt{x}$$ is the upper boundary, $$y=0$$ (the x-axis) is the lower boundary.\\n\\n2️⃣ The region is bounded on the left by $$x=0$$ (where $$\\sqrt{x}=0$$) and on the right by $$x=4$$.\\n\\n3️⃣ The area is given by integrating the (top curve - bottom curve) with respect to $$x$$ from the leftmost x-value to the rightmost x-value.\\n\\nTherefore, the integral is: $$\\int_{0}^{4} (\\sqrt{x} - 0) dx = \\int_{0}^{4} \\sqrt{x} dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_4",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_5",
+              "name": "8.5 Area Between Curves (with respect to y)",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_5_mc_1",
+                  "questionText": "Which integral represents the area of the region bounded by $$x = y^2$$ and $$x = y+2$$?",
+                  "answerText": "Intersection points: $$y^2 = y+2 \\implies y^2 - y - 2 = 0 \\implies (y-2)(y+1)=0$$, so $$y=-1, y=2$$. For $$y \\in [-1,2]$$, $$y+2 \\ge y^2$$. Area $$= \\int_{-1}^{2} ((y+2) - y^2) dy$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_5",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_5_mc_1_a", "text": "$$\\int_{-1}^{2} (y^2 - (y+2)) dy$$" },
+                    { "id": "u8_s8_5_mc_1_b", "text": "$$\\int_{-1}^{2} ((y+2) - y^2) dy$$" },
+                    { "id": "u8_s8_5_mc_1_c", "text": "$$\\int_{0}^{4} (\\sqrt{x} - (x-2)) dx$$" },
+                    { "id": "u8_s8_5_mc_1_d", "text": "$$\\int_{0}^{2} (y^2 - y - 2) dy$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_5_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_5_oe_1",
+                  "questionText": "Set up the integral(s) to find the area of the region enclosed by $$x = 4-y^2$$ and the y-axis ($$x=0$$), integrating with respect to $$y$$. Do not evaluate.",
+                  "answerText": "1️⃣ The curve $$x=4-y^2$$ is a parabola opening to the left. The y-axis is $$x=0$$.\\n\\n2️⃣ Find intersection points with the y-axis: $$4-y^2=0 \\implies y^2=4 \\implies y = \\pm 2$$. These are the limits of integration for $$y$$.\\n\\n3️⃣ For $$y \\in [-2, 2]$$, the curve $$x=4-y^2$$ is to the right of $$x=0$$.\\n\\nTherefore, the integral is: $$\\int_{-2}^{2} ((4-y^2) - 0) dy = \\int_{-2}^{2} (4-y^2) dy$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_5",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_6",
+              "name": "8.6 Area Between Curves - More than Two Intersections",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_6_mc_1",
+                  "questionText": "The area between $$y=\\sin(x)$$ and $$y=\\cos(x)$$ from $$x=0$$ to $$x=\\pi/2$$ is given by which expression?",
+                  "answerText": "On $$[0, \\pi/4]$$, $$\\cos(x) \\ge \\sin(x)$$. On $$[\\pi/4, \\pi/2]$$, $$\\sin(x) \\ge \\cos(x)$$. So, Area $$= \\int_{0}^{\\pi/4} (\\cos(x) - \\sin(x)) dx + \\int_{\\pi/4}^{\\pi/2} (\\sin(x) - \\cos(x)) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_6",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_6_mc_1_a", "text": "$$\\int_{0}^{\\pi/2} (\\sin(x) - \\cos(x)) dx$$" },
+                    { "id": "u8_s8_6_mc_1_b", "text": "$$\\int_{0}^{\\pi/2} (\\cos(x) - \\sin(x)) dx$$" },
+                    { "id": "u8_s8_6_mc_1_c", "text": "$$\\int_{0}^{\\pi/4} (\\cos(x)-\\sin(x))dx + \\int_{\\pi/4}^{\\pi/2} (\\sin(x)-\\cos(x))dx$$" },
+                    { "id": "u8_s8_6_mc_1_d", "text": "$$\\int_{0}^{\\pi/4} (\\sin(x)-\\cos(x))dx + \\int_{\\pi/4}^{\\pi/2} (\\cos(x)-\\sin(x))dx$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_6_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_6_oe_1",
+                  "questionText": "Set up the integral(s) to find the area of the region bounded by the graphs of $$y=x^3$$, $$y=x$$. Do not evaluate.",
+                  "answerText": "1️⃣ Find intersection points: $$x^3 = x \\implies x^3 - x = 0 \\implies x(x^2-1) = 0 \\implies x(x-1)(x+1) = 0$$. So, $$x=-1, 0, 1$$.\\n\\n2️⃣ Determine which function is greater on each interval: \\n   For $$x \\in [-1, 0]$$, $$x^3 \\ge x$$. \\n   For $$x \\in [0, 1]$$, $$x \\ge x^3$$.\\n\\n3️⃣ Set up the integrals for each sub-region and add them: \\n   Area = $$\\int_{-1}^{0} (x^3 - x) dx + \\int_{0}^{1} (x - x^3) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_6",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_7",
+              "name": "8.7 Cross Sections: Squares and Rectangles",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_7_mc_1",
+                  "questionText": "The base of a solid is the region bounded by $$y=\\sqrt{x}$$, $$x=4$$, and the x-axis. Cross-sections perpendicular to the x-axis are squares. What is the volume of the solid?",
+                  "answerText": "The side length of a square cross-section at $$x$$ is $$s = \\sqrt{x}$$. Area of square $$A(x) = s^2 = (\\sqrt{x})^2 = x$$. Volume $$= \\int_{0}^{4} A(x) dx = \\int_{0}^{4} x dx = [\\frac{x^2}{2}]_{0}^{4} = \\frac{16}{2} - 0 = 8$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_7",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_7_mc_1_a", "text": "4" },
+                    { "id": "u8_s8_7_mc_1_b", "text": "8" },
+                    { "id": "u8_s8_7_mc_1_c", "text": "16/3" },
+                    { "id": "u8_s8_7_mc_1_d", "text": "16" }
+                  ],
+                  "correctChoiceId": "u8_s8_7_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_7_oe_1",
+                  "questionText": "The base of a solid is the region in the first quadrant bounded by $$y=1-x^2$$, the x-axis, and the y-axis. Cross-sections perpendicular to the x-axis are rectangles whose height is twice their base. Set up the integral for the volume of the solid. Do not evaluate.",
+                  "answerText": "1️⃣ The base of a rectangle lies on the y-axis from $$y=0$$ to $$y=1-x^2$$. So, the length of the base of a cross-section at a given $$x$$ is $$b = (1-x^2) - 0 = 1-x^2$$.\\n\\n2️⃣ The height of the rectangle is twice its base: $$h = 2b = 2(1-x^2)$$.\\n\\n3️⃣ The area of a rectangular cross-section is $$A(x) = b \\cdot h = (1-x^2) \\cdot 2(1-x^2) = 2(1-x^2)^2$$.\\n\\n4️⃣ The solid extends from $$x=0$$ to $$x=1$$ (where $$1-x^2=0$$ in the first quadrant).\\n\\nTherefore, the volume integral is: $$V = \\int_{0}^{1} 2(1-x^2)^2 dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_7",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_8",
+              "name": "8.8 Cross Sections: Triangles and Semicircles",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_8_mc_1",
+                  "questionText": "The base of a solid is the region bounded by $$y=x$$ and $$y=x^2$$. Cross-sections perpendicular to the x-axis are semicircles. Which integral gives the volume?",
+                  "answerText": "Intersection at $$x=0,1$$. For $$x \\in [0,1]$$, $$x \\ge x^2$$. Diameter of semicircle is $$d = x-x^2$$. Radius $$r = \\frac{x-x^2}{2}$$. Area of semicircle $$A(x) = \\frac{1}{2}\\pi r^2 = \\frac{1}{2}\\pi (\\frac{x-x^2}{2})^2 = \\frac{\\pi}{8}(x-x^2)^2$$. Volume $$= \\int_{0}^{1} \\frac{\\pi}{8}(x-x^2)^2 dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_8",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_8_mc_1_a", "text": "$$\\frac{\\pi}{2} \\int_{0}^{1} (x-x^2)^2 dx$$" },
+                    { "id": "u8_s8_8_mc_1_b", "text": "$$\\frac{\\pi}{8} \\int_{0}^{1} (x-x^2)^2 dx$$" },
+                    { "id": "u8_s8_8_mc_1_c", "text": "$$\\pi \\int_{0}^{1} (\\frac{x-x^2}{2})^2 dx$$" },
+                    { "id": "u8_s8_8_mc_1_d", "text": "$$\\frac{\\pi}{4} \\int_{0}^{1} (x-x^2) dx$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_8_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_8_oe_1",
+                  "questionText": "The base of a solid is the circle $$x^2+y^2=4$$. Cross-sections perpendicular to the x-axis are equilateral triangles. Set up the integral for the volume of the solid. Do not evaluate.",
+                  "answerText": "1️⃣ The base of an equilateral triangle at a position $$x$$ extends from $$y = -\\sqrt{4-x^2}$$ to $$y = \\sqrt{4-x^2}$$. The side length of the triangle is $$s = 2\\sqrt{4-x^2}$$.\\n\\n2️⃣ The area of an equilateral triangle with side $$s$$ is $$A = \\frac{\\sqrt{3}}{4}s^2$$.\\n\\n3️⃣ So, $$A(x) = \\frac{\\sqrt{3}}{4} (2\\sqrt{4-x^2})^2 = \\frac{\\sqrt{3}}{4} (4(4-x^2)) = \\sqrt{3}(4-x^2)$$.\\n\\n4️⃣ The circle extends from $$x=-2$$ to $$x=2$$.\\n\\nTherefore, the volume integral is: $$V = \\int_{-2}^{2} \\sqrt{3}(4-x^2) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_8",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_9",
+              "name": "8.9 Disc Method: Revolving Around the x- or y- Axis",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_9_mc_1",
+                  "questionText": "The region bounded by $$y=\\sqrt{x}$$, $$x=4$$, and the x-axis is revolved around the x-axis. What is the volume of the solid generated?",
+                  "answerText": "Using the disc method, radius $$R(x) = \\sqrt{x}$$. Area of disc $$A(x) = \\pi R(x)^2 = \\pi (\\sqrt{x})^2 = \\pi x$$. Volume $$= \\int_{0}^{4} \\pi x dx = \\pi [\\frac{x^2}{2}]_{0}^{4} = \\pi (\\frac{16}{2} - 0) = 8\\pi$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_9",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_9_mc_1_a", "text": "$$4\\pi$$" },
+                    { "id": "u8_s8_9_mc_1_b", "text": "$$8\\pi$$" },
+                    { "id": "u8_s8_9_mc_1_c", "text": "$$\\frac{16\\pi}{3}$$" },
+                    { "id": "u8_s8_9_mc_1_d", "text": "$$16\\pi$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_9_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_9_oe_1",
+                  "questionText": "The region in the first quadrant bounded by $$y=x^3$$, the y-axis, and the line $$y=8$$ is revolved about the y-axis. Set up the integral for the volume of the solid generated. Do not evaluate.",
+                  "answerText": "1️⃣ When revolving around the y-axis, we integrate with respect to $$y$$. The limits for $$y$$ are from 0 to 8.\\n\\n2️⃣ We need to express $$x$$ in terms of $$y$$: $$y=x^3 \\implies x = \\sqrt[3]{y} = y^{1/3}$$. This will be the radius $$R(y)$$.\\n\\n3️⃣ The area of a disc at height $$y$$ is $$A(y) = \\pi [R(y)]^2 = \\pi (y^{1/3})^2 = \\pi y^{2/3}$$.\\n\\nTherefore, the volume integral is: $$V = \\int_{0}^{8} \\pi y^{2/3} dy$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_9",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_10",
+              "name": "8.10 Disc Method: Revolving Around Other Axes",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_10_mc_1",
+                  "questionText": "The region bounded by $$y=x^2$$, $$x=2$$, and the x-axis is revolved around the line $$x=2$$. Which integral gives the volume?",
+                  "answerText": "Revolving around a vertical line $$x=2$$, integrate w.r.t $$y$$. Curve is $$x=\\sqrt{y}$$. Radius $$R(y) = 2 - \\sqrt{y}$$. Limits for y are from 0 to 4. Volume $$= \\int_{0}^{4} \\pi (2-\\sqrt{y})^2 dy$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_10",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_10_mc_1_a", "text": "$$\\pi \\int_{0}^{2} (2-x^2)^2 dx$$" },
+                    { "id": "u8_s8_10_mc_1_b", "text": "$$\\pi \\int_{0}^{4} (\\sqrt{y})^2 dy$$" },
+                    { "id": "u8_s8_10_mc_1_c", "text": "$$\\pi \\int_{0}^{4} (2-\\sqrt{y})^2 dy$$" },
+                    { "id": "u8_s8_10_mc_1_d", "text": "$$\\pi \\int_{0}^{2} (4-x^4) dx$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_10_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_10_oe_1",
+                  "questionText": "The region bounded by $$y=x$$ and $$y=\\sqrt{x}$$ is revolved about the line $$y=-1$$. Set up the integral for the volume of the solid. Do not evaluate.",
+                  "answerText": "1️⃣ Intersection points: $$x=\\sqrt{x} \\implies x^2=x \\implies x=0, x=1$$. On $$[0,1]$$, $$\\sqrt{x} \\ge x$$.\\n\\n2️⃣ This is a washer method problem. Outer radius $$R(x)$$ is distance from $$y=-1$$ to $$y=\\sqrt{x}$$, so $$R(x) = \\sqrt{x} - (-1) = \\sqrt{x}+1$$.\\n\\n3️⃣ Inner radius $$r(x)$$ is distance from $$y=-1$$ to $$y=x$$, so $$r(x) = x - (-1) = x+1$$.\\n\\n4️⃣ Area of washer $$A(x) = \\pi (R(x)^2 - r(x)^2) = \\pi ((\\sqrt{x}+1)^2 - (x+1)^2)$$.\\n\\nTherefore, the volume integral is: $$V = \\int_{0}^{1} \\pi ((\\sqrt{x}+1)^2 - (x+1)^2) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_10",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_11",
+              "name": "8.11 Washer Method: Revolving Around the x- or y-Axis",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_11_mc_1",
+                  "questionText": "The region bounded by $$y=x$$ and $$y=x^2$$ is revolved about the x-axis. What is the volume of the solid generated?",
+                  "answerText": "Intersection points: $$x=0, x=1$$. For $$x \\in [0,1]$$, $$x \\ge x^2$$. Outer radius $$R(x)=x$$, inner radius $$r(x)=x^2$$. Volume $$= \\int_{0}^{1} \\pi (R(x)^2 - r(x)^2) dx = \\int_{0}^{1} \\pi (x^2 - (x^2)^2) dx = \\int_{0}^{1} \\pi (x^2 - x^4) dx = \\pi [\\frac{x^3}{3} - \\frac{x^5}{5}]_{0}^{1} = \\pi (\\frac{1}{3} - \\frac{1}{5}) = \\frac{2\\pi}{15}$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_11",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_11_mc_1_a", "text": "$$\\frac{\\pi}{15}$$" },
+                    { "id": "u8_s8_11_mc_1_b", "text": "$$\\frac{2\\pi}{15}$$" },
+                    { "id": "u8_s8_11_mc_1_c", "text": "$$\\frac{\\pi}{6}$$" },
+                    { "id": "u8_s8_11_mc_1_d", "text": "$$\\frac{\\pi}{30}$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_11_mc_1_b"
+                },
+                {
+                  "id": "ap_calc_u8_s8_11_oe_1",
+                  "questionText": "The region bounded by $$y=x^2+1$$, $$y=5$$, and $$x=0$$ (first quadrant) is revolved about the y-axis. Set up the integral for the volume of the solid. Do not evaluate.",
+                  "answerText": "1️⃣ Revolve around y-axis, integrate w.r.t $$y$$. Limits for $$y$$ are from $$y=1$$ (vertex of parabola) to $$y=5$$. \\n   The line $$x=0$$ is the axis of revolution for the inner boundary, if one existed, but here it forms the boundary of the region, making it closer to a disc method problem if the solid was against the y-axis. For the washer method revolving around y-axis, we need outer and inner radii as functions of y.\\n\\n2️⃣ Outer radius: The line $$y=5$$ is an upper bound. The curve is $$y=x^2+1 \\implies x^2 = y-1 \\implies x = \\sqrt{y-1}$$ (since first quadrant). The line $$x=0$$ forms the inner boundary. So we need to consider the region from the y-axis to $$x=\\sqrt{y-1}$$. When revolving around y-axis, $$R(y) = \\sqrt{y-1}$$. This is actually a disc method problem since the region is adjacent to the axis of revolution (y-axis).\\n\\nIf we consider the region bounded by $$x=\\sqrt{y-1}$$ (right curve) and $$x=0$$ (left curve/axis of revolution), revolved about y-axis. Radius $$R(y) = \\sqrt{y-1} - 0 = \\sqrt{y-1}$$.\\n\\n   The limits for $$y$$ are from when $$x=0$$ on $$y=x^2+1$$ (which is $$y=1$$) up to $$y=5$$.\\n\\n3️⃣ Area of disc $$A(y) = \\pi [R(y)]^2 = \\pi (\\sqrt{y-1})^2 = \\pi(y-1)$$.\\n\\nTherefore, the volume integral (using Disc method) is: $$V = \\int_{1}^{5} \\pi (y-1) dy$$. (The question might imply a washer if there was a hole, but given bounds, it's a disc.)",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_11",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_12",
+              "name": "8.12 Washer Method: Revolving Around Other Axes",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_12_mc_1",
+                  "questionText": "The region bounded by $$y=\\sqrt{x}$$ and $$y=x/2$$ is revolved around the line $$y=-1$$. Which integral gives the volume?",
+                  "answerText": "Intersections: $$\\sqrt{x} = x/2 \\implies x = x^2/4 \\implies 4x=x^2 \\implies x(x-4)=0$$, so $$x=0,4$$. For $$x \\in [0,4]$$, $$\\sqrt{x} \\ge x/2$$. Outer radius $$R(x) = \\sqrt{x} - (-1) = \\sqrt{x}+1$$. Inner radius $$r(x) = x/2 - (-1) = x/2+1$$. Volume $$= \\int_{0}^{4} \\pi ((\\sqrt{x}+1)^2 - (x/2+1)^2) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_12",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_12_mc_1_a", "text": "$$\\pi \\int_{0}^{4} ((\\sqrt{x})^2 - (x/2)^2) dx$$" },
+                    { "id": "u8_s8_12_mc_1_b", "text": "$$\\pi \\int_{0}^{4} ((\\sqrt{x}-1)^2 - (x/2-1)^2) dx$$" },
+                    { "id": "u8_s8_12_mc_1_c", "text": "$$\\pi \\int_{0}^{4} ((\\sqrt{x}+1)^2 - (x/2+1)^2) dx$$" },
+                    { "id": "u8_s8_12_mc_1_d", "text": "$$\\pi \\int_{0}^{2} ((\\sqrt{x}+1)^2 - (x/2+1)^2) dx$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_12_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_12_oe_1",
+                  "questionText": "The region R is bounded by $$y=e^x$$, $$y=1$$, and $$x=1$$. Set up the integral for the volume of the solid generated when R is revolved about the line $$x=-1$$. Do not evaluate.",
+                  "answerText": "1️⃣ Revolve around vertical line $$x=-1$$, so integrate w.r.t $$y$$. Limits for $$y$$: from $$y=1$$ (lower line) up to $$y=e^1=e$$ (value of $$e^x$$ at $$x=1$$).\\n\\n2️⃣ Outer radius $$R(y)$$: Distance from $$x=-1$$ to the line $$x=1$$. So $$R(y) = 1 - (-1) = 2$$.\\n\\n3️⃣ Inner radius $$r(y)$$: Distance from $$x=-1$$ to the curve $$y=e^x \\implies x=\\ln(y)$$. So $$r(y) = \\ln(y) - (-1) = \\ln(y)+1$$.\\n\\n4️⃣ Area of washer $$A(y) = \\pi (R(y)^2 - r(y)^2) = \\pi ( (2)^2 - (\\ln(y)+1)^2 ) = \\pi (4 - (\\ln(y)+1)^2)$$.\\n\\nTherefore, the volume integral is: $$V = \\int_{1}^{e} \\pi (4 - (\\ln(y)+1)^2) dy$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_12",
+                  "questionType": "open"
+                }
+              ]
+            },
+            {
+              "id": "ap_calc_u8_s8_13",
+              "name": "8.13 The Arc Length of a Smooth, Planar Curve and Distance Traveled (BC topic)",
+              "questions": [
+                {
+                  "id": "ap_calc_u8_s8_13_mc_1",
+                  "questionText": "The arc length of $$y = \\frac{2}{3}x^{3/2}$$ from $$x=0$$ to $$x=3$$ is given by which integral?",
+                  "answerText": "$$\\frac{dy}{dx} = x^{1/2} = \\sqrt{x}$$. Arc Length $$L = \\int_{0}^{3} \\sqrt{1 + (\\frac{dy}{dx})^2} dx = \\int_{0}^{3} \\sqrt{1 + (\\sqrt{x})^2} dx = \\int_{0}^{3} \\sqrt{1+x} dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_13",
+                  "questionType": "multiple-choice",
+                  "choices": [
+                    { "id": "u8_s8_13_mc_1_a", "text": "$$\\int_{0}^{3} \\sqrt{1+x^2} dx$$" },
+                    { "id": "u8_s8_13_mc_1_b", "text": "$$\\int_{0}^{3} (1+x) dx$$" },
+                    { "id": "u8_s8_13_mc_1_c", "text": "$$\\int_{0}^{3} \\sqrt{1+x} dx$$" },
+                    { "id": "u8_s8_13_mc_1_d", "text": "$$\\int_{0}^{3} \\sqrt{1+\\frac{4}{9}x} dx$$" }
+                  ],
+                  "correctChoiceId": "u8_s8_13_mc_1_c"
+                },
+                {
+                  "id": "ap_calc_u8_s8_13_oe_1",
+                  "questionText": "Set up the integral for the arc length of the curve $$y = \\ln(\\cos(x))$$ from $$x=0$$ to $$x=\\pi/4$$. Do not evaluate.",
+                  "answerText": "1️⃣ First, find the derivative $$\\frac{dy}{dx}$$. \\n   $$y = \\ln(\\cos(x)) \\implies \\frac{dy}{dx} = \\frac{1}{\\cos(x)} \\cdot (-\\sin(x)) = -\\tan(x)$$.\\n\\n2️⃣ Next, find $$(\\frac{dy}{dx})^2$$. \\n   $$(\\frac{dy}{dx})^2 = (-\\tan(x))^2 = \\tan^2(x)$$.\\n\\n3️⃣ Substitute into the arc length formula $$L = \\int_{a}^{b} \\sqrt{1 + (\\frac{dy}{dx})^2} dx$$. \\n   $$L = \\int_{0}^{\\pi/4} \\sqrt{1 + \\tan^2(x)} dx$$.\\n\\n4️⃣ Simplify the integrand using the identity $$1 + \\tan^2(x) = \\sec^2(x)$$. \\n   $$L = \\int_{0}^{\\pi/4} \\sqrt{\\sec^2(x)} dx = \\int_{0}^{\\pi/4} |\\sec(x)| dx$$. Since $$\\sec(x)$$ is positive on $$[0, \\pi/4]$$, $$|\\sec(x)| = \\sec(x)$$.\\n\\nTherefore, the integral is: $$L = \\int_{0}^{\\pi/4} \\sec(x) dx$$.",
+                  "subjectId": "ap_calculus",
+                  "unitId": "ap_calc_u8",
+                  "sectionId": "ap_calc_u8_s8_13",
+                  "questionType": "open"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Unit 9 - Parametric Equations, Polar Coordinates, and Vector-Valued Functions (BC topics)",
+          "id": "ap_calc_u9",
+          "sections": [
+            { "id": "ap_calc_u9_s9_1", "name": "9.1 Defining and Differentiating Parametric Equations", "questions": [] },
+            { "id": "ap_calc_u9_s9_2", "name": "9.2 Second Derivatives of Parametric Equations", "questions": [] },
+            { "id": "ap_calc_u9_s9_3", "name": "9.3 Arc Lengths of Curves (Parametric Equations)", "questions": [] },
+            { "id": "ap_calc_u9_s9_4", "name": "9.4 Defining and Differentiating Vector-Valued Functions", "questions": [] },
+            { "id": "ap_calc_u9_s9_5", "name": "9.5 Integrating Vector-Valued Functions", "questions": [] },
+            { "id": "ap_calc_u9_s9_6", "name": "9.6 Solving Motion Problems Using Parametric and Vector-Valued Functions", "questions": [] },
+            { "id": "ap_calc_u9_s9_7", "name": "9.7 Defining Polar Coordinates and Differentiating in Polar Form", "questions": [] },
+            { "id": "ap_calc_u9_s9_8", "name": "9.8 Find the Area of a Polar Region or the Area Bounded by a Single Polar Curve", "questions": [] },
+            { "id": "ap_calc_u9_s9_9", "name": "9.9 Finding the Area of the Region Bounded by Two Polar Curves", "questions": [] }
+          ]
+        },
+        {
+          "name": "Unit 10 - Infinite Sequences and Series (BC topics)",
+          "id": "ap_calc_u10",
+          "sections": [
+            { "id": "ap_calc_u10_s10_1", "name": "10.1 Defining Convergent and Divergent Infinite Series", "questions": [] },
+            { "id": "ap_calc_u10_s10_2", "name": "10.2 Working with Geometric Series", "questions": [] },
+            { "id": "ap_calc_u10_s10_3", "name": "10.3 The nth Term Test for Divergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_4", "name": "10.4 Integral Test for Convergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_5", "name": "10.5 Harmonic Series and p-Series", "questions": [] },
+            { "id": "ap_calc_u10_s10_6", "name": "10.6 Comparison Tests for Convergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_7", "name": "10.7 Alternating Series Test for Convergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_8", "name": "10.8 Ratio Test for Convergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_9", "name": "10.9 Determining Absolute or Conditional Convergence", "questions": [] },
+            { "id": "ap_calc_u10_s10_10_mid_review", "name": "Mid-Unit Review - Unit 10", "questions": [] },
+            { "id": "ap_calc_u10_s10_10", "name": "10.10 Alternating Series Error Bound", "questions": [] },
+            { "id": "ap_calc_u10_s10_11", "name": "10.11 Finding Taylor Polynomial Approximations of Functions", "questions": [] },
+            { "id": "ap_calc_u10_s10_12", "name": "10.12 Lagrange Error Bound", "questions": [] },
+            { "id": "ap_calc_u10_s10_13", "name": "10.13 Radius and Interval of Convergence of Power Series", "questions": [] },
+            { "id": "ap_calc_u10_s10_14", "name": "10.14 Finding Taylor Maclaurin Series for a Function", "questions": [] },
+            { "id": "ap_calc_u10_s10_15", "name": "10.15 Representing Functions as a Power Series", "questions": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}
